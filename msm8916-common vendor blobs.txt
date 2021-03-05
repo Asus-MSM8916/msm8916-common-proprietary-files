@@ -58,14 +58,18 @@ etc/firmware/cpp_firmware_v1_4_0.fw
 
 # Firmware
 etc/firmware/a225p5_pm4.fw
-etc/firmware/a420_pfp.fw
 etc/firmware/Signedrompatch_v21.bin
 etc/firmware/a225_pfp.fw
-etc/firmware/a420_pm4.fw
 etc/firmware/Signedrompatch_v24.bin
 etc/firmware/a225_pm4.fw
 etc/firmware/Signedrompatch_v20.bin
 etc/firmware/Signedrompatch_v30.bin
+
+# Graphics firmware
+etc/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw
 
 # Thermal
 vendor/bin/thermal-engine
@@ -403,7 +407,6 @@ etc/ins_module.sh
 etc/icesoundpresets.def
 etc/sec_config
 etc/firmware/cmnlib.b02
-etc/firmware/a300_pm4.fw
 etc/firmware/cmnlib.b00
 etc/firmware/widevine.b00
 etc/firmware/wcd9306/wcd9306_anc.bin
@@ -413,7 +416,6 @@ etc/firmware/cmnlib.mdt
 etc/firmware/widevine.b01
 etc/firmware/cmnlib.b03
 etc/firmware/widevine.mdt
-etc/firmware/a300_pfp.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/nfc_test.bin
 etc/firmware/widevine.b02
