@@ -41,11 +41,37 @@ vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
 
+# Arcsoft - Camera effects
+etc/gallery_arcsoft_config.cng
+lib/libjpeggifcodec.so
+lib/style.cng
+
 # Battery
 bin/vm_bms:vendor/bin/vm_bms
 
+# Bluetooth
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
+vendor/lib64/libbtnv.so
+
 # Camera firmware
 etc/firmware/cpp_firmware_v1_4_0.fw
+
+# Firmware
+etc/firmware/a225p5_pm4.fw
+etc/firmware/a420_pfp.fw
+etc/firmware/Signedrompatch_v21.bin
+etc/firmware/a225_pfp.fw
+etc/firmware/a420_pm4.fw
+etc/firmware/Signedrompatch_v24.bin
+etc/firmware/a225_pm4.fw
+etc/firmware/Signedrompatch_v20.bin
+etc/firmware/Signedrompatch_v30.bin
+
+# Thermal
+vendor/bin/thermal-engine
+vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
+vendor/lib/libthermalclient.so
 
 # Time services
 -vendor/lib64/libtime_genoff.so
@@ -103,7 +129,6 @@ vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/libgeofence.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libacdbmapper.so
-vendor/lib64/libbtnv.so
 vendor/lib64/libavutil.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/lib-imsrcscmclient.so
@@ -117,7 +142,6 @@ vendor/lib64/libQtiTether.so
 vendor/lib64/lib-imsxml.so
 vendor/lib64/lib-imsrcscm.so
 vendor/lib64/libasn1crt.so
-vendor/lib64/libthermalclient.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libvendorconn.so
 vendor/lib64/libllvm-qcom.so
@@ -207,7 +231,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/lib-imss.so
 vendor/lib64/libdpmframework.so
-vendor/lib64/libthermalioctl.so
 vendor/lib64/libscale.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libdrmfs.so
@@ -251,7 +274,6 @@ vendor/lib/libQtiTether.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/libthermalclient.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libQSEEComAPI.so
@@ -327,9 +349,7 @@ vendor/lib/libscale.so
 vendor/lib/libC2D2.so
 vendor/bin/imsqmidaemon
 vendor/bin/qseecomd
-vendor/bin/hci_qcomm_init
 vendor/bin/imsdatadaemon
-vendor/bin/thermal-engine
 vendor/bin/qmuxd
 vendor/bin/mm-pp-daemon
 vendor/bin/rmt_storage
@@ -361,12 +381,10 @@ priv-app/CNEService/CNEService.apk
 priv-app/com.qualcomm.location/com.qualcomm.location.apk
 priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 lib/libcmdthread.so
-lib/libjpeggifcodec.so
 lib/libaptX_encoder.so
 lib/soundfx/libicepower.so
 lib/libOmxVdecHevc.so
 lib/libloc_api_v02.so
-lib/style.cng
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ispDB/ParameterDB.db
 bin/cnd
@@ -384,28 +402,19 @@ etc/dpm/dpm.conf
 etc/ins_module.sh
 etc/icesoundpresets.def
 etc/sec_config
-etc/firmware/a420_pm4.fw
 etc/firmware/cmnlib.b02
 etc/firmware/a300_pm4.fw
 etc/firmware/cmnlib.b00
-etc/firmware/a420_pfp.fw
-etc/firmware/a225_pm4.fw
 etc/firmware/widevine.b00
 etc/firmware/wcd9306/wcd9306_anc.bin
 etc/firmware/wcd9306/wcd9306_mbhc.bin
 etc/firmware/a330_pfp.fw
 etc/firmware/cmnlib.mdt
-etc/firmware/Signedrompatch_v20.bin
 etc/firmware/widevine.b01
 etc/firmware/cmnlib.b03
 etc/firmware/widevine.mdt
-etc/firmware/Signedrompatch_v24.bin
-etc/firmware/a225_pfp.fw
 etc/firmware/a300_pfp.fw
-etc/firmware/a225p5_pm4.fw
-etc/firmware/Signedrompatch_v21.bin
 etc/firmware/leia_pfp_470.fw
-etc/firmware/Signedrompatch_v30.bin
 etc/firmware/nfc_test.bin
 etc/firmware/widevine.b02
 etc/firmware/a330_pm4.fw
@@ -447,7 +456,6 @@ etc/sensor_init.sh
 etc/lowi.conf
 etc/sap.conf
 etc/bspcapability.xml
-etc/gallery_arcsoft_config.cng
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/dpmapi.xml
