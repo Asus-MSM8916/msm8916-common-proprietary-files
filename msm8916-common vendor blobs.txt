@@ -41,10 +41,37 @@ vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
 
+# Battery
+bin/vm_bms:vendor/bin/vm_bms
+
+# Camera firmware
+etc/firmware/cpp_firmware_v1_4_0.fw
+
+# Time services
+-vendor/lib64/libtime_genoff.so
+-vendor/lib/libtime_genoff.so
+
+# Voice recognition
+vendor/lib/hw/sound_trigger.primary.msm8916.so
+vendor/lib/libsmwrapper.so
+
+# Widevine
+vendor/bin/move_widevine_data.sh
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libwvhidl.so
+
+# Peripheral manager - from daisy - xiaomi/daisy/daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
+vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
+
+# Peripheral manager - from Xperia_AOSP_M_MR1_3.10_v13_legacy
+vendor/bin/pm-service|36b90dc2833761739e85b06f88656fa6abab1f41
+vendor/lib/libperipheral_client.so|36b1373c6ecf311f1f93fd748e843dfe6f073283
+vendor/lib64/libperipheral_client.so|3e74e1cac5a7bc6594f0f156e0719bee36e2d846
+
 vendor/app/imssettings/imssettings.apk
 vendor/app/colorservice/colorservice.apk
 vendor/app/ims/ims.apk
-vendor/lib64/libtime_genoff.so
 vendor/lib64/liblqe.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libqti-at.so
@@ -77,7 +104,6 @@ vendor/lib64/libgeofence.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libacdbmapper.so
 vendor/lib64/libbtnv.so
-vendor/lib64/libperipheral_client.so
 vendor/lib64/libavutil.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/lib-imsrcscmclient.so
@@ -85,7 +111,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/libadiertac.so
 vendor/lib64/librilqmiservices.so
-vendor/lib64/libwvhidl.so
 vendor/lib64/libffmpeg_extractor.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libQtiTether.so
@@ -189,7 +214,6 @@ vendor/lib64/libdrmfs.so
 vendor/firmware/wlan/prima/WCNSS_cfg.dat
 vendor/qcril.db
 vendor/framework/com.qti.snapdragon.sdk.display.jar
-vendor/lib/libtime_genoff.so
 vendor/lib/libqti-at.so
 vendor/lib/libconfigdb.so
 vendor/lib/libflp.so
@@ -197,7 +221,6 @@ vendor/lib/libCB.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libswscale.so
 vendor/lib/hw/flp.default.so
-vendor/lib/hw/sound_trigger.primary.msm8916.so
 vendor/lib/libc2d30-a3xx.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libffmpeg_utils.so
@@ -214,7 +237,6 @@ vendor/lib/libgeofence.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libacdbmapper.so
 vendor/lib/libbtnv.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libavutil.so
 vendor/lib/libqct_resampler.so
 vendor/lib/libqmi_encdec.so
@@ -266,7 +288,6 @@ vendor/lib/libacdb-fts.so
 vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libqomx_jpegenc.so
-vendor/lib/libsmwrapper.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libaudcal.so
 vendor/lib/libacdbrtac.so
@@ -306,11 +327,8 @@ vendor/lib/libscale.so
 vendor/lib/libC2D2.so
 vendor/bin/imsqmidaemon
 vendor/bin/qseecomd
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/bin/move_widevine_data.sh
 vendor/bin/hci_qcomm_init
 vendor/bin/imsdatadaemon
-vendor/bin/pm-proxy
 vendor/bin/thermal-engine
 vendor/bin/qmuxd
 vendor/bin/mm-pp-daemon
@@ -320,12 +338,9 @@ vendor/bin/imscmservice
 vendor/bin/perfd
 vendor/bin/slim_daemon
 vendor/bin/irsc_util
-vendor/bin/vm_bms
 vendor/bin/rfs_access
 vendor/bin/radish
 vendor/bin/ims_rtp_daemon
-vendor/bin/pm-service
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
 app/shutdownlistener/shutdownlistener.apk
 lib64/libcmdthread.so
@@ -389,7 +404,6 @@ etc/firmware/a225_pfp.fw
 etc/firmware/a300_pfp.fw
 etc/firmware/a225p5_pm4.fw
 etc/firmware/Signedrompatch_v21.bin
-etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/Signedrompatch_v30.bin
 etc/firmware/nfc_test.bin
@@ -434,7 +448,6 @@ etc/lowi.conf
 etc/sap.conf
 etc/bspcapability.xml
 etc/gallery_arcsoft_config.cng
-
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/dpmapi.xml
