@@ -165,6 +165,21 @@ etc/firmware/a300_pm4.fw
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
+# Postprocessing
+vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
+-vendor/framework/com.qti.snapdragon.sdk.display.jar
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
+vendor/lib64/libdisp-aba.so
+-vendor/lib64/libmm-abl.so
+vendor/lib64/libmm-abl-oem.so
+vendor/lib64/libmm-disp-apis.so
+vendor/lib64/libmm-qdcm.so
+vendor/lib/libdisp-aba.so
+-vendor/lib/libmm-abl.so
+vendor/lib/libmm-abl-oem.so
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-qdcm.so
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
@@ -205,10 +220,8 @@ vendor/lib64/libdpmctmgr.so
 vendor/lib64/libswscale.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libffmpeg_utils.so
-vendor/lib64/libdisp-aba.so
 vendor/lib64/lib-imsrcscmservice.so
 vendor/lib64/lib-imscamera.so
-vendor/lib64/libmm-abl-oem.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libxml.so
 vendor/lib64/libcne.so
@@ -232,7 +245,6 @@ vendor/lib64/lib-imsrcscm.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libvendorconn.so
-vendor/lib64/libmm-disp-apis.so
 vendor/lib64/liblowi_wifihal_nl.so
 vendor/lib64/libffmpeg_omx.so
 vendor/lib64/libswresample.so
@@ -277,10 +289,8 @@ vendor/lib64/libulp2.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/lib-imsrcs.so
-vendor/lib64/libmm-qdcm.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libsd_sdk_display.so
-vendor/lib64/libmm-abl.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/lib-ims-rcscmjni.so
@@ -292,15 +302,12 @@ vendor/lib64/lib-imss.so
 vendor/lib64/libdpmframework.so
 vendor/firmware/wlan/prima/WCNSS_cfg.dat
 vendor/qcril.db
-vendor/framework/com.qti.snapdragon.sdk.display.jar
 vendor/lib/libqti-at.so
 vendor/lib/libconfigdb.so
 vendor/lib/libswscale.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libffmpeg_utils.so
-vendor/lib/libdisp-aba.so
 vendor/lib/lib-imscamera.so
-vendor/lib/libmm-abl-oem.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
@@ -318,7 +325,6 @@ vendor/lib/drm/libdrmprplugin.so
 vendor/lib/libffmpeg_extractor.so
 vendor/lib/libdsutils.so
 vendor/lib/libQtiTether.so
-vendor/lib/libmm-disp-apis.so
 vendor/lib/libsettings.so
 vendor/lib/libffmpeg_omx.so
 vendor/lib/libswresample.so
@@ -353,10 +359,8 @@ vendor/lib/libsmemlog.so
 vendor/lib/libmm-als.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libbccQTI.so
-vendor/lib/libmm-qdcm.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libsd_sdk_display.so
-vendor/lib/libmm-abl.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libavcodec.so
 vendor/lib/libavformat.so
@@ -365,7 +369,6 @@ vendor/lib/libqmi_common_so.so
 vendor/bin/imsqmidaemon
 vendor/bin/imsdatadaemon
 vendor/bin/qmuxd
-vendor/bin/mm-pp-daemon
 vendor/bin/rmt_storage
 vendor/bin/netmgrd
 vendor/bin/imscmservice
@@ -375,7 +378,6 @@ vendor/bin/irsc_util
 vendor/bin/rfs_access
 vendor/bin/radish
 vendor/bin/ims_rtp_daemon
-vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
 app/shutdownlistener/shutdownlistener.apk
 lib64/libcmdthread.so
 lib64/libaptX_encoder.so
