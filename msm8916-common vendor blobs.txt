@@ -194,6 +194,7 @@ etc/firmware/a420_pm4.fw
 # Postprocessing
 vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
 -vendor/framework/com.qti.snapdragon.sdk.display.jar
+-vendor/app/colorservice/colorservice.apk
 bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
 -vendor/lib64/libmm-abl.so
@@ -235,7 +236,6 @@ vendor/lib/libperipheral_client.so|36b1373c6ecf311f1f93fd748e843dfe6f073283
 vendor/lib64/libperipheral_client.so|3e74e1cac5a7bc6594f0f156e0719bee36e2d846
 
 vendor/app/imssettings/imssettings.apk
-vendor/app/colorservice/colorservice.apk
 vendor/app/ims/ims.apk
 vendor/lib64/liblqe.so
 vendor/lib64/liblowi_wifihal.so
