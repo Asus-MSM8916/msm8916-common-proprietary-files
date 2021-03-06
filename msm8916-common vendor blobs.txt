@@ -69,6 +69,10 @@ bin/vm_bms:vendor/bin/vm_bms
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib64/libbtnv.so
 
+# Bluetooth (AptX)
+lib64/libaptX_encoder.so
+lib/libaptX_encoder.so
+
 # Camera firmware
 etc/firmware/cpp_firmware_v1_4_0.fw
 
@@ -82,13 +86,27 @@ vendor/lib64/libssd.so
 vendor/lib/libQSEEComAPI.so
 
 # Firmware
-etc/firmware/a225p5_pm4.fw
-etc/firmware/Signedrompatch_v21.bin
-etc/firmware/a225_pfp.fw
-etc/firmware/Signedrompatch_v24.bin
-etc/firmware/a225_pm4.fw
 etc/firmware/Signedrompatch_v20.bin
+etc/firmware/Signedrompatch_v21.bin
+etc/firmware/Signedrompatch_v24.bin
 etc/firmware/Signedrompatch_v30.bin
+etc/firmware/wcd9306/wcd9306_anc.bin
+etc/firmware/wcd9306/wcd9306_mbhc.bin
+etc/firmware/Phone_vivid.txt
+etc/firmware/cmnlib.b00
+etc/firmware/cmnlib.b01
+etc/firmware/cmnlib.b02
+etc/firmware/cmnlib.b03
+etc/firmware/cmnlib.mdt
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.mdt
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/nfc_test.bin
+etc/firmware/ice40.bin
 
 # GPS
 -lib64/libloc_api_v02.so|0b5ebaadcf020739aa7b7349c3e80adcc8300a5d
@@ -161,8 +179,13 @@ vendor/lib/libsc-a3xx.so|0ce1042501a97906fdcd1f6fdc22a7efd0e2232b
 vendor/lib/libscale.so|7938a028168c3dc5a84efa5c0e0b88d8f3c6292c
 
 # Graphics firmware
+etc/firmware/a225p5_pm4.fw
+etc/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw
 etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
@@ -381,7 +404,6 @@ vendor/bin/radish
 vendor/bin/ims_rtp_daemon
 app/shutdownlistener/shutdownlistener.apk
 lib64/libcmdthread.so
-lib64/libaptX_encoder.so
 framework/imscmlibrary.jar
 framework/ConnectivityExt.jar
 framework/dpmapi.jar
@@ -396,7 +418,6 @@ priv-app/CNEService/CNEService.apk
 priv-app/com.qualcomm.location/com.qualcomm.location.apk
 priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 lib/libcmdthread.so
-lib/libaptX_encoder.so
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ispDB/ParameterDB.db
 bin/cnd
@@ -410,25 +431,6 @@ etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/dpm/dpm.conf
-etc/firmware/cmnlib.b02
-etc/firmware/cmnlib.b00
-etc/firmware/widevine.b00
-etc/firmware/wcd9306/wcd9306_anc.bin
-etc/firmware/wcd9306/wcd9306_mbhc.bin
-etc/firmware/a330_pfp.fw
-etc/firmware/cmnlib.mdt
-etc/firmware/widevine.b01
-etc/firmware/cmnlib.b03
-etc/firmware/widevine.mdt
-etc/firmware/leia_pfp_470.fw
-etc/firmware/nfc_test.bin
-etc/firmware/widevine.b02
-etc/firmware/a330_pm4.fw
-etc/firmware/leia_pm4_470.fw
-etc/firmware/widevine.b03
-etc/firmware/Phone_vivid.txt
-etc/firmware/ice40.bin
-etc/firmware/cmnlib.b01
 etc/tamcid
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/qcnvitems.xml
