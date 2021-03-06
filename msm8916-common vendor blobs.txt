@@ -47,6 +47,7 @@ lib/libjpeggifcodec.so
 lib/style.cng
 
 # Audio
+lib/soundfx/libicepower.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -381,7 +382,6 @@ vendor/bin/ims_rtp_daemon
 app/shutdownlistener/shutdownlistener.apk
 lib64/libcmdthread.so
 lib64/libaptX_encoder.so
-lib64/libOmxVdecHevc.so
 framework/imscmlibrary.jar
 framework/ConnectivityExt.jar
 framework/dpmapi.jar
@@ -397,8 +397,6 @@ priv-app/com.qualcomm.location/com.qualcomm.location.apk
 priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 lib/libcmdthread.so
 lib/libaptX_encoder.so
-lib/soundfx/libicepower.so
-lib/libOmxVdecHevc.so
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ispDB/ParameterDB.db
 bin/cnd
