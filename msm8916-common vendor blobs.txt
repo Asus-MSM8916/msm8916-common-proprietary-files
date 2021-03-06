@@ -50,11 +50,13 @@ lib/style.cng
 lib/soundfx/libicepower.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbmapper.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
+vendor/lib/libacdbmapper.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
@@ -255,7 +257,6 @@ vendor/lib64/libcneapiclient.so
 vendor/lib64/libidl.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libacdbmapper.so
 vendor/lib64/libavutil.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/lib-imsrcscmclient.so
@@ -337,7 +338,6 @@ vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libidl.so
 vendor/lib/libqti-perfd-client.so
-vendor/lib/libacdbmapper.so
 vendor/lib/libbtnv.so
 vendor/lib/libavutil.so
 vendor/lib/libqct_resampler.so
